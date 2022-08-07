@@ -14,6 +14,8 @@ using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Drivers.EntityFrameworkCore;
 using Providers.EntityFrameworkCore;
+using WashClothes.Clothes;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace WashClothes.EntityFrameworkCore;
 
@@ -54,6 +56,8 @@ public class WashClothesDbContext :
 
     #endregion
 
+    public DbSet<Clothe> Clothes { get; set; }
+
     public WashClothesDbContext(DbContextOptions<WashClothesDbContext> options)
         : base(options)
     {
@@ -83,6 +87,15 @@ public class WashClothesDbContext :
         //    b.ConfigureByConvention(); //auto configure for the base class props
         //    //...
         //});
+
+        builder.Entity<Clothe>(b =>
+        {
+            b.ConfigureByConvention();
+            b.Property(p => p.Color).IsRequired();
+            b.Property(p => p.Type).IsRequired();
+            b.HasOne<IdentityUser>().WithMany().HasForeignKey(p => p.UserId);
+        });
+
         builder.ConfigureDrivers();
             builder.ConfigureProviders();
         }

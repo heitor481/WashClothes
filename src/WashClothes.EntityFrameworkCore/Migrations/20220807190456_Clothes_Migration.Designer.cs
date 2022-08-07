@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 using WashClothes.EntityFrameworkCore;
@@ -12,9 +13,10 @@ using WashClothes.EntityFrameworkCore;
 namespace WashClothes.Migrations
 {
     [DbContext(typeof(WashClothesDbContext))]
-    partial class WashClothesDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220807190456_Clothes_Migration")]
+    partial class Clothes_Migration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
