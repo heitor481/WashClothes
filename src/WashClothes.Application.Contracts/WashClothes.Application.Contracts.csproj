@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>WashClothes</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WashClothes.Domain.Shared\WashClothes.Domain.Shared.csproj" />
+  <ProjectReference Include="..\..\modules\Drivers\src\Drivers.Application.Contracts\Drivers.Application.Contracts.csproj" /><ProjectReference Include="..\..\modules\Providers\src\Providers.Application.Contracts\Providers.Application.Contracts.csproj" /></ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.ObjectExtending" Version="5.3.3" />
+    <PackageReference Include="Volo.Abp.Account.Application.Contracts" Version="5.3.3" />
+    <PackageReference Include="Volo.Abp.Identity.Application.Contracts" Version="5.3.3" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application.Contracts" Version="5.3.3" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application.Contracts" Version="5.3.3" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application.Contracts" Version="5.3.3" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application.Contracts" Version="5.3.3" />
+  </ItemGroup>
+
+</Project>
