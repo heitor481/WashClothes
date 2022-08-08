@@ -10,7 +10,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="6.0.5" />
-    <ProjectReference Include="..\..\src\Drivers.EntityFrameworkCore\Drivers.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\Drivers.TestBase\Drivers.TestBase.csproj" />
     <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="5.3.3" />
   </ItemGroup>

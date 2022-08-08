@@ -9,7 +9,6 @@
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Http.Client.IdentityModel" Version="5.3.3" />
     <PackageReference Include="Volo.Abp.Autofac" Version="5.3.3" />
-    <ProjectReference Include="..\..\src\Drivers.HttpApi.Client\Drivers.HttpApi.Client.csproj" />
   </ItemGroup>
 
   <ItemGroup>

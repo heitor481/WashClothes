@@ -8,8 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WashClothes.Application.Contracts\WashClothes.Application.Contracts.csproj" />
-  <ProjectReference Include="..\..\modules\Drivers\src\Drivers.HttpApi.Client\Drivers.HttpApi.Client.csproj" /><ProjectReference Include="..\..\modules\Providers\src\Providers.HttpApi.Client\Providers.HttpApi.Client.csproj" /></ItemGroup>
+    <ProjectReference Include="..\WashClothes.Application.Contracts\WashClothes.Application.Contracts.csproj" /></ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Account.HttpApi.Client" Version="5.3.3" />

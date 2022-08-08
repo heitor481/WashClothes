@@ -6,8 +6,7 @@ using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
-using Drivers;
-using Providers;
+
 
 namespace WashClothes;
 
@@ -21,8 +20,6 @@ namespace WashClothes;
     typeof(AbpFeatureManagementApplicationModule),
     typeof(AbpSettingManagementApplicationModule)
     )]
-[DependsOn(typeof(DriversApplicationModule))]
-    [DependsOn(typeof(ProvidersApplicationModule))]
     public class WashClothesApplicationModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)

@@ -12,8 +12,7 @@ using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.Validation.Localization;
 using Volo.Abp.VirtualFileSystem;
-using Drivers;
-using Providers;
+
 
 namespace WashClothes;
 
@@ -27,8 +26,6 @@ namespace WashClothes;
     typeof(AbpSettingManagementDomainSharedModule),
     typeof(AbpTenantManagementDomainSharedModule)
     )]
-[DependsOn(typeof(DriversDomainSharedModule))]
-    [DependsOn(typeof(ProvidersDomainSharedModule))]
     public class WashClothesDomainSharedModule : AbpModule
 {
     public override void PreConfigureServices(ServiceConfigurationContext context)

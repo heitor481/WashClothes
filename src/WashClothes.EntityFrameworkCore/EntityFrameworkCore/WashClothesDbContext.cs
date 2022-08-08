@@ -12,8 +12,6 @@ using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
-using Drivers.EntityFrameworkCore;
-using Providers.EntityFrameworkCore;
 using WashClothes.Clothes;
 using Volo.Abp.EntityFrameworkCore.Modeling;
 
@@ -95,8 +93,5 @@ public class WashClothesDbContext :
             b.Property(p => p.Type).IsRequired();
             b.HasOne<IdentityUser>().WithMany().HasForeignKey(p => p.UserId);
         });
-
-        builder.ConfigureDrivers();
-            builder.ConfigureProviders();
-        }
+    }
 }

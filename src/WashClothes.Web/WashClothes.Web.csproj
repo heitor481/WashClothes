@@ -17,8 +17,7 @@
   <ItemGroup>
     <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
     <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
-    <PackageReference Include="Microsoft.AspNetCore.DataProtection.StackExchangeRedis" Version="6.0.5" />
-  <ProjectReference Include="..\..\modules\Drivers\src\Drivers.Web\Drivers.Web.csproj" /><ProjectReference Include="..\..\modules\Providers\src\Providers.Web\Providers.Web.csproj" /></ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.StackExchangeRedis" Version="6.0.5" /></ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Autofac" Version="5.3.3" />

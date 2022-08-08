@@ -8,8 +8,7 @@ using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement.HttpApi;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
-using Drivers;
-using Providers;
+
 
 namespace WashClothes;
 
@@ -22,8 +21,6 @@ namespace WashClothes;
     typeof(AbpFeatureManagementHttpApiModule),
     typeof(AbpSettingManagementHttpApiModule)
     )]
-[DependsOn(typeof(DriversHttpApiModule))]
-    [DependsOn(typeof(ProvidersHttpApiModule))]
     public class WashClothesHttpApiModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)

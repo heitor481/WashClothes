@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Drivers.Application\Drivers.Application.csproj" />
     <ProjectReference Include="..\Drivers.Domain.Tests\Drivers.Domain.Tests.csproj" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
   </ItemGroup>

@@ -11,8 +11,7 @@ using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
-using Drivers.EntityFrameworkCore;
-using Providers.EntityFrameworkCore;
+
 
 namespace WashClothes.EntityFrameworkCore;
 
@@ -28,8 +27,6 @@ namespace WashClothes.EntityFrameworkCore;
     typeof(AbpTenantManagementEntityFrameworkCoreModule),
     typeof(AbpFeatureManagementEntityFrameworkCoreModule)
     )]
-[DependsOn(typeof(DriversEntityFrameworkCoreModule))]
-    [DependsOn(typeof(ProvidersEntityFrameworkCoreModule))]
     public class WashClothesEntityFrameworkCoreModule : AbpModule
 {
     public override void PreConfigureServices(ServiceConfigurationContext context)

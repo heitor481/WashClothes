@@ -13,8 +13,7 @@ using Volo.Abp.PermissionManagement.Identity;
 using Volo.Abp.PermissionManagement.IdentityServer;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
-using Drivers;
-using Providers;
+
 
 namespace WashClothes;
 
@@ -31,8 +30,6 @@ namespace WashClothes;
     typeof(AbpTenantManagementDomainModule),
     typeof(AbpEmailingModule)
 )]
-[DependsOn(typeof(DriversDomainModule))]
-    [DependsOn(typeof(ProvidersDomainModule))]
     public class WashClothesDomainModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)

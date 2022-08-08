@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.StackExchangeRedis" Version="6.0.5" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy" Version="5.3.3" />
+    <PackageReference Include="Volo.Abp.Autofac" Version="5.3.3" />
+    <PackageReference Include="Volo.Abp.Caching.StackExchangeRedis" Version="5.3.3" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Serilog" Version="5.3.3" />
+    <PackageReference Include="Volo.Abp.Swashbuckle" Version="5.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\src\WashClothes.Domain.Shared\WashClothes.Domain.Shared.csproj" />
+    <ProjectReference Include="..\Providers.Application\Providers.Application.csproj" />
+    <ProjectReference Include="..\Providers.EntityFrameworkCore\Providers.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Providers.HttpApi\Providers.HttpApi.csproj" />
+  </ItemGroup>
+
+</Project>
