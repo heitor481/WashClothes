@@ -1,0 +1,946 @@
+2022-08-06 22:59:33.132 -03:00 [INF] Starting WashClothes.HttpApi.Host.
+2022-08-06 22:59:44.255 -03:00 [INF] Loaded ABP modules:
+2022-08-06 22:59:44.259 -03:00 [INF] - WashClothes.WashClothesHttpApiHostModule
+2022-08-06 22:59:44.259 -03:00 [INF]   - WashClothes.WashClothesHttpApiModule
+2022-08-06 22:59:44.259 -03:00 [INF]     - WashClothes.WashClothesApplicationContractsModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - WashClothes.WashClothesDomainSharedModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-08-06 22:59:44.259 -03:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2022-08-06 22:59:44.259 -03:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-08-06 22:59:44.259 -03:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-08-06 22:59:44.259 -03:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-08-06 22:59:44.259 -03:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-08-06 22:59:44.259 -03:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-08-06 22:59:44.259 -03:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-08-06 22:59:44.259 -03:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-08-06 22:59:44.259 -03:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-08-06 22:59:44.259 -03:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-08-06 22:59:44.259 -03:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-08-06 22:59:44.259 -03:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-08-06 22:59:44.259 -03:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-08-06 22:59:44.259 -03:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-08-06 22:59:44.259 -03:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Drivers.DriversDomainSharedModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Providers.ProvidersDomainSharedModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-08-06 22:59:44.259 -03:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-08-06 22:59:44.259 -03:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-08-06 22:59:44.259 -03:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2022-08-06 22:59:44.259 -03:00 [INF]                 - Volo.Abp.Timing.AbpTimingModule
+2022-08-06 22:59:44.259 -03:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-08-06 22:59:44.259 -03:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-08-06 22:59:44.259 -03:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2022-08-06 22:59:44.259 -03:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-08-06 22:59:44.259 -03:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-08-06 22:59:44.259 -03:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-08-06 22:59:44.259 -03:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-08-06 22:59:44.259 -03:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Drivers.DriversApplicationContractsModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Providers.ProvidersApplicationContractsModule
+2022-08-06 22:59:44.259 -03:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-08-06 22:59:44.259 -03:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-08-06 22:59:44.259 -03:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2022-08-06 22:59:44.259 -03:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2022-08-06 22:59:44.259 -03:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-08-06 22:59:44.259 -03:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2022-08-06 22:59:44.259 -03:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-08-06 22:59:44.259 -03:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-08-06 22:59:44.259 -03:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-08-06 22:59:44.259 -03:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-08-06 22:59:44.259 -03:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2022-08-06 22:59:44.259 -03:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-08-06 22:59:44.259 -03:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2022-08-06 22:59:44.259 -03:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2022-08-06 22:59:44.259 -03:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-08-06 22:59:44.259 -03:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-08-06 22:59:44.259 -03:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2022-08-06 22:59:44.259 -03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-08-06 22:59:44.259 -03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2022-08-06 22:59:44.259 -03:00 [INF]     - Drivers.DriversHttpApiModule
+2022-08-06 22:59:44.259 -03:00 [INF]     - Providers.ProvidersHttpApiModule
+2022-08-06 22:59:44.259 -03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-08-06 22:59:44.259 -03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-08-06 22:59:44.259 -03:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2022-08-06 22:59:44.259 -03:00 [INF]     - Volo.Abp.Caching.AbpCachingModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.Serialization.AbpSerializationModule
+2022-08-06 22:59:44.259 -03:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-08-06 22:59:44.259 -03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-08-06 22:59:44.259 -03:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-08-06 22:59:44.259 -03:00 [INF]   - WashClothes.WashClothesApplicationModule
+2022-08-06 22:59:44.259 -03:00 [INF]     - WashClothes.WashClothesDomainModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2022-08-06 22:59:44.259 -03:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2022-08-06 22:59:44.259 -03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-08-06 22:59:44.259 -03:00 [INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2022-08-06 22:59:44.260 -03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-08-06 22:59:44.260 -03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-08-06 22:59:44.260 -03:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2022-08-06 22:59:44.260 -03:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-08-06 22:59:44.260 -03:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-08-06 22:59:44.260 -03:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-08-06 22:59:44.260 -03:00 [INF]       - Drivers.DriversDomainModule
+2022-08-06 22:59:44.260 -03:00 [INF]       - Providers.ProvidersDomainModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2022-08-06 22:59:44.260 -03:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-08-06 22:59:44.260 -03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Drivers.DriversApplicationModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Providers.ProvidersApplicationModule
+2022-08-06 22:59:44.260 -03:00 [INF]   - WashClothes.EntityFrameworkCore.WashClothesEntityFrameworkCoreModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-08-06 22:59:44.260 -03:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-08-06 22:59:44.260 -03:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Drivers.EntityFrameworkCore.DriversEntityFrameworkCoreModule
+2022-08-06 22:59:44.260 -03:00 [INF]     - Providers.EntityFrameworkCore.ProvidersEntityFrameworkCoreModule
+2022-08-06 22:59:44.260 -03:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2022-08-06 22:59:44.260 -03:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2022-08-06 22:59:44.451 -03:00 [DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+2022-08-06 22:59:44.455 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-08-06 22:59:45.521 -03:00 [INF] User profile is available. Using 'C:\Users\Avell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-06 22:59:45.609 -03:00 [INF] Initialized all ABP modules.
+2022-08-06 22:59:45.686 -03:00 [INF] Creating key {910ae11a-c538-4812-bbc6-fbbbb62cdb5f} with creation date 2022-08-07 01:59:45Z, activation date 2022-08-07 01:59:45Z, and expiration date 2022-11-05 01:59:45Z.
+2022-08-06 22:59:45.696 -03:00 [INF] Writing data to file 'C:\Users\Avell\AppData\Local\ASP.NET\DataProtection-Keys\key-910ae11a-c538-4812-bbc6-fbbbb62cdb5f.xml'.
+2022-08-06 22:59:45.779 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-06 22:59:45.779 -03:00 [INF] Hosting environment: Development
+2022-08-06 22:59:45.779 -03:00 [INF] Content root path: C:\Users\Avell\workspace\washclothes\src\WashClothes.HttpApi.Host\
+2022-08-06 22:59:45.836 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/ - -
+2022-08-06 22:59:55.866 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 9s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 9s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-06 23:00:05.138 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 18s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 18s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-06 23:00:14.302 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 27s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 27s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-06 23:00:23.476 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 37s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 37s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-06 23:00:24.262 -03:00 [INF] Executing endpoint 'WashClothes.Controllers.HomeController.Index (WashClothes.HttpApi.Host)'
+2022-08-06 23:00:24.320 -03:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller WashClothes.Controllers.HomeController (WashClothes.HttpApi.Host).
+2022-08-06 23:00:24.382 -03:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-08-06 23:00:24.389 -03:00 [INF] Executed action WashClothes.Controllers.HomeController.Index (WashClothes.HttpApi.Host) in 63.7829ms
+2022-08-06 23:00:24.389 -03:00 [INF] Executed endpoint 'WashClothes.Controllers.HomeController.Index (WashClothes.HttpApi.Host)'
+2022-08-06 23:00:24.424 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/swagger - -
+2022-08-06 23:00:24.441 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/swagger/index.html - -
+2022-08-06 23:00:24.454 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/swagger - - - 301 - - 29.2335ms
+2022-08-06 23:00:24.454 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/ - - - 302 - - 38619.1093ms
+2022-08-06 23:00:24.720 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/swagger/swagger-ui.css - -
+2022-08-06 23:00:24.721 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/swagger/ui/abp.js - -
+2022-08-06 23:00:24.721 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/swagger/swagger-ui-bundle.js - -
+2022-08-06 23:00:24.730 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/swagger/ui/abp.swagger.js - -
+2022-08-06 23:00:24.731 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/swagger/index.html - - - 200 - text/html;charset=utf-8 289.4412ms
+2022-08-06 23:00:24.736 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/_framework/aspnetcore-browser-refresh.js - -
+2022-08-06 23:00:24.741 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/swagger/swagger-ui-standalone-preset.js - -
+2022-08-06 23:00:24.750 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 13.8470ms
+2022-08-06 23:00:24.761 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-08-06 23:00:24.761 -03:00 [INF] Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'N/A'
+2022-08-06 23:00:24.761 -03:00 [INF] Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'N/A'
+2022-08-06 23:00:24.761 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-08-06 23:00:24.761 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-08-06 23:00:24.761 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/swagger/ui/abp.js - - - 200 3122 application/javascript 40.2857ms
+2022-08-06 23:00:24.761 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/swagger/ui/abp.swagger.js - - - 200 1246 application/javascript 31.5982ms
+2022-08-06 23:00:24.765 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/swagger/swagger-ui.css - - - 200 143943 text/css 45.2458ms
+2022-08-06 23:00:24.777 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/swagger/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 35.4998ms
+2022-08-06 23:00:24.807 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/swagger/swagger-ui-bundle.js - - - 200 1095087 application/javascript 85.6333ms
+2022-08-06 23:00:24.826 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/_vs/browserLink - -
+2022-08-06 23:00:24.925 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 99.3448ms
+2022-08-06 23:00:25.065 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/swagger/v1/swagger.json - -
+2022-08-06 23:00:25.091 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/swagger/favicon-32x32.png - -
+2022-08-06 23:00:25.094 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-08-06 23:00:25.094 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/swagger/favicon-32x32.png - - - 200 628 image/png 2.7543ms
+2022-08-06 23:00:25.343 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 277.4530ms
+2022-08-06 23:10:16.186 -03:00 [INF] Starting WashClothes.HttpApi.Host.
+2022-08-06 23:10:21.247 -03:00 [INF] Loaded ABP modules:
+2022-08-06 23:10:21.250 -03:00 [INF] - WashClothes.WashClothesHttpApiHostModule
+2022-08-06 23:10:21.250 -03:00 [INF]   - WashClothes.WashClothesHttpApiModule
+2022-08-06 23:10:21.250 -03:00 [INF]     - WashClothes.WashClothesApplicationContractsModule
+2022-08-06 23:10:21.250 -03:00 [INF]       - WashClothes.WashClothesDomainSharedModule
+2022-08-06 23:10:21.250 -03:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-08-06 23:10:21.250 -03:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2022-08-06 23:10:21.250 -03:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-08-06 23:10:21.250 -03:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2022-08-06 23:10:21.250 -03:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-08-06 23:10:21.250 -03:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-08-06 23:10:21.250 -03:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-08-06 23:10:21.250 -03:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-08-06 23:10:21.250 -03:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-08-06 23:10:21.250 -03:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-08-06 23:10:21.250 -03:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-08-06 23:10:21.250 -03:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-08-06 23:10:21.250 -03:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-08-06 23:10:21.250 -03:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-08-06 23:10:21.250 -03:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-08-06 23:10:21.250 -03:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-08-06 23:10:21.250 -03:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-08-06 23:10:21.250 -03:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-08-06 23:10:21.250 -03:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-08-06 23:10:21.250 -03:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-08-06 23:10:21.250 -03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-08-06 23:10:21.250 -03:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-08-06 23:10:21.250 -03:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-08-06 23:10:21.250 -03:00 [INF]         - Drivers.DriversDomainSharedModule
+2022-08-06 23:10:21.250 -03:00 [INF]         - Providers.ProvidersDomainSharedModule
+2022-08-06 23:10:21.250 -03:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-08-06 23:10:21.250 -03:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-08-06 23:10:21.250 -03:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-08-06 23:10:21.250 -03:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-08-06 23:10:21.250 -03:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2022-08-06 23:10:21.250 -03:00 [INF]                 - Volo.Abp.Timing.AbpTimingModule
+2022-08-06 23:10:21.250 -03:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-08-06 23:10:21.250 -03:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-08-06 23:10:21.250 -03:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2022-08-06 23:10:21.250 -03:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-08-06 23:10:21.250 -03:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-08-06 23:10:21.250 -03:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-08-06 23:10:21.250 -03:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-08-06 23:10:21.250 -03:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-08-06 23:10:21.250 -03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-08-06 23:10:21.250 -03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-08-06 23:10:21.250 -03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-08-06 23:10:21.250 -03:00 [INF]       - Drivers.DriversApplicationContractsModule
+2022-08-06 23:10:21.250 -03:00 [INF]       - Providers.ProvidersApplicationContractsModule
+2022-08-06 23:10:21.250 -03:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2022-08-06 23:10:21.250 -03:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-08-06 23:10:21.251 -03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-08-06 23:10:21.251 -03:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-08-06 23:10:21.251 -03:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2022-08-06 23:10:21.251 -03:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2022-08-06 23:10:21.251 -03:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-08-06 23:10:21.251 -03:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2022-08-06 23:10:21.251 -03:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-08-06 23:10:21.251 -03:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-08-06 23:10:21.251 -03:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-08-06 23:10:21.251 -03:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-08-06 23:10:21.251 -03:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2022-08-06 23:10:21.251 -03:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-08-06 23:10:21.251 -03:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2022-08-06 23:10:21.251 -03:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2022-08-06 23:10:21.251 -03:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-08-06 23:10:21.251 -03:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Drivers.DriversHttpApiModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Providers.ProvidersHttpApiModule
+2022-08-06 23:10:21.251 -03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-08-06 23:10:21.251 -03:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.Caching.AbpCachingModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.Serialization.AbpSerializationModule
+2022-08-06 23:10:21.251 -03:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-08-06 23:10:21.251 -03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-08-06 23:10:21.251 -03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-08-06 23:10:21.251 -03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-08-06 23:10:21.251 -03:00 [INF]   - WashClothes.WashClothesApplicationModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - WashClothes.WashClothesDomainModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2022-08-06 23:10:21.251 -03:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2022-08-06 23:10:21.251 -03:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-08-06 23:10:21.251 -03:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-08-06 23:10:21.251 -03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2022-08-06 23:10:21.251 -03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2022-08-06 23:10:21.251 -03:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-08-06 23:10:21.251 -03:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-08-06 23:10:21.251 -03:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Drivers.DriversDomainModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Providers.ProvidersDomainModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-08-06 23:10:21.251 -03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Drivers.DriversApplicationModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Providers.ProvidersApplicationModule
+2022-08-06 23:10:21.251 -03:00 [INF]   - WashClothes.EntityFrameworkCore.WashClothesEntityFrameworkCoreModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-08-06 23:10:21.251 -03:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-08-06 23:10:21.251 -03:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Drivers.EntityFrameworkCore.DriversEntityFrameworkCoreModule
+2022-08-06 23:10:21.251 -03:00 [INF]     - Providers.EntityFrameworkCore.ProvidersEntityFrameworkCoreModule
+2022-08-06 23:10:21.251 -03:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2022-08-06 23:10:21.251 -03:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2022-08-06 23:10:21.390 -03:00 [DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+2022-08-06 23:10:21.395 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-08-06 23:10:21.782 -03:00 [INF] User profile is available. Using 'C:\Users\Avell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-06 23:10:21.889 -03:00 [INF] Initialized all ABP modules.
+2022-08-06 23:10:21.970 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-06 23:10:21.971 -03:00 [INF] Hosting environment: Development
+2022-08-06 23:10:21.971 -03:00 [INF] Content root path: C:\Users\Avell\workspace\washclothes\src\WashClothes.HttpApi.Host\
+2022-08-06 23:10:22.021 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/ - -
+2022-08-06 23:10:26.924 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 4s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 4s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-06 23:10:39.002 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 16s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 16s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-06 23:10:39.672 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44381/api/abp/application-configuration?api-version=1.0 - -
+2022-08-06 23:10:48.170 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 25s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 25s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-06 23:10:57.320 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 34s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 34s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-06 23:10:57.966 -03:00 [INF] Executing endpoint 'WashClothes.Controllers.HomeController.Index (WashClothes.HttpApi.Host)'
+2022-08-06 23:10:57.966 -03:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2022-08-06 23:10:57.988 -03:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2022-08-06 23:10:57.988 -03:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller WashClothes.Controllers.HomeController (WashClothes.HttpApi.Host).
+2022-08-06 23:10:58.061 -03:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-08-06 23:10:58.071 -03:00 [INF] Executed action WashClothes.Controllers.HomeController.Index (WashClothes.HttpApi.Host) in 75.4785ms
+2022-08-06 23:10:58.071 -03:00 [INF] Executed endpoint 'WashClothes.Controllers.HomeController.Index (WashClothes.HttpApi.Host)'
+2022-08-06 23:10:58.102 -03:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-08-06 23:10:58.112 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/swagger/index.html - -
+2022-08-06 23:10:58.129 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/ - - - 302 - - 36107.8422ms
+2022-08-06 23:10:58.649 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/swagger/index.html - - - 200 - text/html;charset=utf-8 537.3090ms
+2022-08-06 23:10:58.692 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/_framework/aspnetcore-browser-refresh.js - -
+2022-08-06 23:10:58.706 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 8.1438ms
+2022-08-06 23:10:58.737 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/_vs/browserLink - -
+2022-08-06 23:10:58.792 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.9725ms
+2022-08-06 23:10:59.073 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/swagger/v1/swagger.json - -
+2022-08-06 23:10:59.366 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 292.7653ms
+2022-08-06 23:11:07.824 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 45s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 45s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-06 23:11:17.260 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 54s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 54s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.GetAndRefreshManyAsync(IEnumerable`1 keys, Boolean getData, CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.GetManyAsync(IEnumerable`1 keys, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetManyAsync(IEnumerable`1 keys, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-06 23:11:26.622 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 64s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 64s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.GetAndRefreshManyAsync(IEnumerable`1 keys, Boolean getData, CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.GetManyAsync(IEnumerable`1 keys, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetManyAsync(IEnumerable`1 keys, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-06 23:11:26.790 -03:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-08-06 23:11:26.805 -03:00 [DBG] Added 0 entity changes to the current audit log
+2022-08-06 23:11:26.806 -03:00 [DBG] Added 0 entity changes to the current audit log
+2022-08-06 23:11:26.821 -03:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2022-08-06 23:11:26.856 -03:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 28867.6059ms
+2022-08-06 23:11:26.858 -03:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2022-08-06 23:11:26.860 -03:00 [DBG] Added 0 entity changes to the current audit log
+2022-08-06 23:11:26.860 -03:00 [DBG] Added 0 entity changes to the current audit log
+2022-08-06 23:11:30.964 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 68s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 68s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-06 23:11:40.130 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 77s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 77s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-06 23:11:44.209 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 81s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 81s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-06 23:11:44.217 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44381/api/abp/application-configuration?api-version=1.0 - - - 200 - application/json;+charset=utf-8 64545.1826ms
+2022-08-07 20:38:54.405 -03:00 [INF] Starting WashClothes.HttpApi.Host.
+2022-08-07 20:39:07.000 -03:00 [INF] Loaded ABP modules:
+2022-08-07 20:39:07.002 -03:00 [INF] - WashClothes.WashClothesHttpApiHostModule
+2022-08-07 20:39:07.002 -03:00 [INF]   - WashClothes.WashClothesHttpApiModule
+2022-08-07 20:39:07.002 -03:00 [INF]     - WashClothes.WashClothesApplicationContractsModule
+2022-08-07 20:39:07.002 -03:00 [INF]       - WashClothes.WashClothesDomainSharedModule
+2022-08-07 20:39:07.002 -03:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-08-07 20:39:07.002 -03:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2022-08-07 20:39:07.002 -03:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-08-07 20:39:07.002 -03:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2022-08-07 20:39:07.002 -03:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-08-07 20:39:07.002 -03:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-08-07 20:39:07.002 -03:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-08-07 20:39:07.002 -03:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-08-07 20:39:07.002 -03:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-08-07 20:39:07.002 -03:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-08-07 20:39:07.002 -03:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-08-07 20:39:07.002 -03:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-08-07 20:39:07.002 -03:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-08-07 20:39:07.002 -03:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-08-07 20:39:07.002 -03:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-08-07 20:39:07.002 -03:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-08-07 20:39:07.002 -03:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-08-07 20:39:07.002 -03:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-08-07 20:39:07.002 -03:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-08-07 20:39:07.002 -03:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-08-07 20:39:07.002 -03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-08-07 20:39:07.002 -03:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-08-07 20:39:07.002 -03:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-08-07 20:39:07.002 -03:00 [INF]         - Drivers.DriversDomainSharedModule
+2022-08-07 20:39:07.002 -03:00 [INF]         - Providers.ProvidersDomainSharedModule
+2022-08-07 20:39:07.002 -03:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-08-07 20:39:07.002 -03:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-08-07 20:39:07.002 -03:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-08-07 20:39:07.002 -03:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-08-07 20:39:07.002 -03:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2022-08-07 20:39:07.002 -03:00 [INF]                 - Volo.Abp.Timing.AbpTimingModule
+2022-08-07 20:39:07.002 -03:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-08-07 20:39:07.002 -03:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-08-07 20:39:07.002 -03:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2022-08-07 20:39:07.002 -03:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-08-07 20:39:07.002 -03:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-08-07 20:39:07.002 -03:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-08-07 20:39:07.002 -03:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-08-07 20:39:07.002 -03:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-08-07 20:39:07.002 -03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-08-07 20:39:07.002 -03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-08-07 20:39:07.002 -03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-08-07 20:39:07.002 -03:00 [INF]       - Drivers.DriversApplicationContractsModule
+2022-08-07 20:39:07.002 -03:00 [INF]       - Providers.ProvidersApplicationContractsModule
+2022-08-07 20:39:07.002 -03:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2022-08-07 20:39:07.002 -03:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-08-07 20:39:07.002 -03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-08-07 20:39:07.002 -03:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-08-07 20:39:07.002 -03:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2022-08-07 20:39:07.002 -03:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2022-08-07 20:39:07.002 -03:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-08-07 20:39:07.002 -03:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2022-08-07 20:39:07.002 -03:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-08-07 20:39:07.002 -03:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-08-07 20:39:07.002 -03:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-08-07 20:39:07.002 -03:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-08-07 20:39:07.002 -03:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2022-08-07 20:39:07.002 -03:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-08-07 20:39:07.002 -03:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2022-08-07 20:39:07.002 -03:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2022-08-07 20:39:07.002 -03:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-08-07 20:39:07.002 -03:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Drivers.DriversHttpApiModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Providers.ProvidersHttpApiModule
+2022-08-07 20:39:07.003 -03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-08-07 20:39:07.003 -03:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.Caching.AbpCachingModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.Serialization.AbpSerializationModule
+2022-08-07 20:39:07.003 -03:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-08-07 20:39:07.003 -03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-08-07 20:39:07.003 -03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-08-07 20:39:07.003 -03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-08-07 20:39:07.003 -03:00 [INF]   - WashClothes.WashClothesApplicationModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - WashClothes.WashClothesDomainModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2022-08-07 20:39:07.003 -03:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2022-08-07 20:39:07.003 -03:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-08-07 20:39:07.003 -03:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-08-07 20:39:07.003 -03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2022-08-07 20:39:07.003 -03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2022-08-07 20:39:07.003 -03:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-08-07 20:39:07.003 -03:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-08-07 20:39:07.003 -03:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Drivers.DriversDomainModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Providers.ProvidersDomainModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-08-07 20:39:07.003 -03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Drivers.DriversApplicationModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Providers.ProvidersApplicationModule
+2022-08-07 20:39:07.003 -03:00 [INF]   - WashClothes.EntityFrameworkCore.WashClothesEntityFrameworkCoreModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-08-07 20:39:07.003 -03:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-08-07 20:39:07.003 -03:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Drivers.EntityFrameworkCore.DriversEntityFrameworkCoreModule
+2022-08-07 20:39:07.003 -03:00 [INF]     - Providers.EntityFrameworkCore.ProvidersEntityFrameworkCoreModule
+2022-08-07 20:39:07.003 -03:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2022-08-07 20:39:07.003 -03:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2022-08-07 20:39:07.178 -03:00 [DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+2022-08-07 20:39:07.182 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-08-07 20:39:08.180 -03:00 [INF] User profile is available. Using 'C:\Users\Avell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-07 20:39:08.271 -03:00 [INF] Initialized all ABP modules.
+2022-08-07 20:39:08.370 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-07 20:39:08.370 -03:00 [INF] Hosting environment: Development
+2022-08-07 20:39:08.370 -03:00 [INF] Content root path: C:\Users\Avell\workspace\washclothes\src\WashClothes.HttpApi.Host\
+2022-08-07 20:39:08.422 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/ - -
+2022-08-07 20:39:15.274 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44381/api/abp/application-configuration?api-version=1.0 - -
+2022-08-07 20:39:18.480 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 9s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 9s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-07 20:39:27.798 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 18s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 18s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-07 20:39:31.912 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 22s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 22s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-07 20:39:36.023 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 26s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 26s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-07 20:39:36.909 -03:00 [INF] Executing endpoint 'WashClothes.Controllers.HomeController.Index (WashClothes.HttpApi.Host)'
+2022-08-07 20:39:36.909 -03:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2022-08-07 20:39:36.944 -03:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller WashClothes.Controllers.HomeController (WashClothes.HttpApi.Host).
+2022-08-07 20:39:36.944 -03:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2022-08-07 20:39:37.006 -03:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-08-07 20:39:37.014 -03:00 [INF] Executed action WashClothes.Controllers.HomeController.Index (WashClothes.HttpApi.Host) in 62.8447ms
+2022-08-07 20:39:37.014 -03:00 [INF] Executed endpoint 'WashClothes.Controllers.HomeController.Index (WashClothes.HttpApi.Host)'
+2022-08-07 20:39:37.035 -03:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-08-07 20:39:37.063 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/ - - - 302 - - 28640.9319ms
+2022-08-07 20:39:37.064 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/swagger/index.html - -
+2022-08-07 20:39:37.639 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/swagger/index.html - - - 200 - text/html;charset=utf-8 574.5259ms
+2022-08-07 20:39:37.670 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/_framework/aspnetcore-browser-refresh.js - -
+2022-08-07 20:39:37.682 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 6.2946ms
+2022-08-07 20:39:37.709 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/_vs/browserLink - -
+2022-08-07 20:39:37.816 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 106.6990ms
+2022-08-07 20:39:37.881 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/swagger/v1/swagger.json - -
+2022-08-07 20:39:38.179 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 297.5085ms
+2022-08-07 20:39:46.722 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 37s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 37s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-07 20:39:56.170 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 47s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 47s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.GetAndRefreshManyAsync(IEnumerable`1 keys, Boolean getData, CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.GetManyAsync(IEnumerable`1 keys, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetManyAsync(IEnumerable`1 keys, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-07 20:40:05.467 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 56s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 56s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.GetAndRefreshManyAsync(IEnumerable`1 keys, Boolean getData, CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.GetManyAsync(IEnumerable`1 keys, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetManyAsync(IEnumerable`1 keys, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-07 20:40:05.631 -03:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-08-07 20:40:05.645 -03:00 [DBG] Added 0 entity changes to the current audit log
+2022-08-07 20:40:05.647 -03:00 [DBG] Added 0 entity changes to the current audit log
+2022-08-07 20:40:05.665 -03:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2022-08-07 20:40:05.708 -03:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 28763.267ms
+2022-08-07 20:40:05.709 -03:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2022-08-07 20:40:05.711 -03:00 [DBG] Added 0 entity changes to the current audit log
+2022-08-07 20:40:05.711 -03:00 [DBG] Added 0 entity changes to the current audit log
+2022-08-07 20:40:09.803 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 60s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 60s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-07 20:40:18.965 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 69s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 69s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-07 20:40:28.146 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 79s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 79s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-07 20:40:28.160 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44381/api/abp/application-configuration?api-version=1.0 - - - 200 - application/json;+charset=utf-8 72886.0993ms
+2022-08-07 20:40:59.848 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44381/api/abp/application-configuration?api-version=1.0 - -
+2022-08-07 20:40:59.863 -03:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2022-08-07 20:40:59.863 -03:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2022-08-07 20:40:59.869 -03:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-08-07 20:41:09.052 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 120s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 120s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-07 20:41:18.233 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 129s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 129s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.GetAndRefreshManyAsync(IEnumerable`1 keys, Boolean getData, CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.GetManyAsync(IEnumerable`1 keys, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetManyAsync(IEnumerable`1 keys, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-07 20:41:22.341 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 133s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 133s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.GetAndRefreshManyAsync(IEnumerable`1 keys, Boolean getData, CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.GetManyAsync(IEnumerable`1 keys, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetManyAsync(IEnumerable`1 keys, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-07 20:41:22.349 -03:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-08-07 20:41:22.352 -03:00 [DBG] Added 0 entity changes to the current audit log
+2022-08-07 20:41:22.353 -03:00 [DBG] Added 0 entity changes to the current audit log
+2022-08-07 20:41:22.355 -03:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2022-08-07 20:41:22.358 -03:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 22494.517ms
+2022-08-07 20:41:22.358 -03:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2022-08-07 20:41:22.358 -03:00 [DBG] Added 0 entity changes to the current audit log
+2022-08-07 20:41:22.358 -03:00 [DBG] Added 0 entity changes to the current audit log
+2022-08-07 20:41:26.458 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 137s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 137s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-07 20:41:35.655 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 146s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 146s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-07 20:41:44.811 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 155s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 155s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-07 20:41:44.811 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44381/api/abp/application-configuration?api-version=1.0 - - - 200 - application/json;+charset=utf-8 44963.4183ms
+2022-08-07 22:08:29.615 -03:00 [INF] Starting WashClothes.HttpApi.Host.
+2022-08-07 22:08:42.287 -03:00 [INF] Loaded ABP modules:
+2022-08-07 22:08:42.288 -03:00 [INF] - WashClothes.WashClothesHttpApiHostModule
+2022-08-07 22:08:42.289 -03:00 [INF]   - WashClothes.WashClothesHttpApiModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - WashClothes.WashClothesApplicationContractsModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - WashClothes.WashClothesDomainSharedModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-08-07 22:08:42.289 -03:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2022-08-07 22:08:42.289 -03:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-08-07 22:08:42.289 -03:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-08-07 22:08:42.289 -03:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-08-07 22:08:42.289 -03:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-08-07 22:08:42.289 -03:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-08-07 22:08:42.289 -03:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-08-07 22:08:42.289 -03:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-08-07 22:08:42.289 -03:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-08-07 22:08:42.289 -03:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-08-07 22:08:42.289 -03:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-08-07 22:08:42.289 -03:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-08-07 22:08:42.289 -03:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-08-07 22:08:42.289 -03:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-08-07 22:08:42.289 -03:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-08-07 22:08:42.289 -03:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-08-07 22:08:42.289 -03:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-08-07 22:08:42.289 -03:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2022-08-07 22:08:42.289 -03:00 [INF]                 - Volo.Abp.Timing.AbpTimingModule
+2022-08-07 22:08:42.289 -03:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-08-07 22:08:42.289 -03:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-08-07 22:08:42.289 -03:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2022-08-07 22:08:42.289 -03:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-08-07 22:08:42.289 -03:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-08-07 22:08:42.289 -03:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-08-07 22:08:42.289 -03:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-08-07 22:08:42.289 -03:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2022-08-07 22:08:42.289 -03:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2022-08-07 22:08:42.289 -03:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2022-08-07 22:08:42.289 -03:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2022-08-07 22:08:42.289 -03:00 [INF]               - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-08-07 22:08:42.289 -03:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2022-08-07 22:08:42.289 -03:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-08-07 22:08:42.289 -03:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2022-08-07 22:08:42.289 -03:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2022-08-07 22:08:42.289 -03:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2022-08-07 22:08:42.289 -03:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2022-08-07 22:08:42.289 -03:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2022-08-07 22:08:42.289 -03:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2022-08-07 22:08:42.289 -03:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2022-08-07 22:08:42.289 -03:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2022-08-07 22:08:42.289 -03:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2022-08-07 22:08:42.289 -03:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2022-08-07 22:08:42.289 -03:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.Caching.AbpCachingModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.Serialization.AbpSerializationModule
+2022-08-07 22:08:42.289 -03:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2022-08-07 22:08:42.289 -03:00 [INF]   - WashClothes.WashClothesApplicationModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - WashClothes.WashClothesDomainModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2022-08-07 22:08:42.289 -03:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2022-08-07 22:08:42.289 -03:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2022-08-07 22:08:42.289 -03:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2022-08-07 22:08:42.289 -03:00 [INF]   - WashClothes.EntityFrameworkCore.WashClothesEntityFrameworkCoreModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2022-08-07 22:08:42.289 -03:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2022-08-07 22:08:42.289 -03:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2022-08-07 22:08:42.289 -03:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2022-08-07 22:08:42.289 -03:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2022-08-07 22:08:42.289 -03:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2022-08-07 22:08:42.446 -03:00 [DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+2022-08-07 22:08:42.452 -03:00 [DBG] Started background worker: Volo.Abp.IdentityServer.Tokens.TokenCleanupBackgroundWorker
+2022-08-07 22:08:43.471 -03:00 [INF] User profile is available. Using 'C:\Users\Avell\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-07 22:08:43.562 -03:00 [INF] Initialized all ABP modules.
+2022-08-07 22:08:43.650 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-08-07 22:08:43.650 -03:00 [INF] Hosting environment: Development
+2022-08-07 22:08:43.650 -03:00 [INF] Content root path: C:\Users\Avell\workspace\washclothes\src\WashClothes.HttpApi.Host\
+2022-08-07 22:08:43.712 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/ - -
+2022-08-07 22:08:48.674 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 4s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 4s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-07 22:08:54.629 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44381/api/abp/application-configuration?api-version=1.0 - -
+2022-08-07 22:09:00.665 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 16s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 16s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-07 22:09:04.768 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 20s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 20s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-07 22:09:13.946 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 29s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 29s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-07 22:09:14.687 -03:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2022-08-07 22:09:14.687 -03:00 [INF] Executing endpoint 'WashClothes.Controllers.HomeController.Index (WashClothes.HttpApi.Host)'
+2022-08-07 22:09:14.708 -03:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2022-08-07 22:09:14.708 -03:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller WashClothes.Controllers.HomeController (WashClothes.HttpApi.Host).
+2022-08-07 22:09:14.767 -03:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2022-08-07 22:09:14.776 -03:00 [INF] Executed action WashClothes.Controllers.HomeController.Index (WashClothes.HttpApi.Host) in 62.0629ms
+2022-08-07 22:09:14.776 -03:00 [INF] Executed endpoint 'WashClothes.Controllers.HomeController.Index (WashClothes.HttpApi.Host)'
+2022-08-07 22:09:14.803 -03:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2022-08-07 22:09:14.820 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/swagger/index.html - -
+2022-08-07 22:09:14.836 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/ - - - 302 - - 31124.3488ms
+2022-08-07 22:09:15.327 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/swagger/index.html - - - 200 - text/html;charset=utf-8 507.8150ms
+2022-08-07 22:09:15.368 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/_framework/aspnetcore-browser-refresh.js - -
+2022-08-07 22:09:15.376 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 7.5302ms
+2022-08-07 22:09:15.405 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/_vs/browserLink - -
+2022-08-07 22:09:15.470 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.6548ms
+2022-08-07 22:09:15.568 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44381/swagger/v1/swagger.json - -
+2022-08-07 22:09:15.831 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44381/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 263.0915ms
+2022-08-07 22:09:24.453 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 40s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 40s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-07 22:09:28.724 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 44s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 44s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.GetAndRefreshManyAsync(IEnumerable`1 keys, Boolean getData, CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.GetManyAsync(IEnumerable`1 keys, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetManyAsync(IEnumerable`1 keys, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-07 22:09:38.036 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 53s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 53s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.GetAndRefreshManyAsync(IEnumerable`1 keys, Boolean getData, CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.GetManyAsync(IEnumerable`1 keys, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetManyAsync(IEnumerable`1 keys, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2022-08-07 22:09:38.199 -03:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2022-08-07 22:09:38.215 -03:00 [DBG] Added 0 entity changes to the current audit log
+2022-08-07 22:09:38.217 -03:00 [DBG] Added 0 entity changes to the current audit log
+2022-08-07 22:09:38.231 -03:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2022-08-07 22:09:38.276 -03:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 23566.9224ms
+2022-08-07 22:09:38.277 -03:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2022-08-07 22:09:38.278 -03:00 [DBG] Added 0 entity changes to the current audit log
+2022-08-07 22:09:38.278 -03:00 [DBG] Added 0 entity changes to the current audit log
+2022-08-07 22:09:42.389 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 58s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 58s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-07 22:09:46.477 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 62s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 62s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-07 22:09:55.655 -03:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 71s ago, v: 2.2.4.27433
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 71s ago, v: 2.2.4.27433
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 858
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Volo.Abp.Caching.StackExchangeRedis.AbpRedisCache.SetManyAsync(IEnumerable`1 items, DistributedCacheEntryOptions options, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.<>c__DisplayClass54_0.<<SetManyAsync>g__SetRealCache|0>d.MoveNext()
+2022-08-07 22:09:55.662 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44381/api/abp/application-configuration?api-version=1.0 - - - 200 - application/json;+charset=utf-8 61032.8605ms
