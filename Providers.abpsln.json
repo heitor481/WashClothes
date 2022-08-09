@@ -1,7 +1,0 @@
-{
-  "modules": {
-    "Providers": {
-      "path": "Providers.abpmdl.json"
-    }
-  }
-}
