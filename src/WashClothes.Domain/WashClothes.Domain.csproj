@@ -8,8 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WashClothes.Domain.Shared\WashClothes.Domain.Shared.csproj" />
-  <ProjectReference Include="..\..\modules\Drivers\src\Drivers.Domain\Drivers.Domain.csproj" /><ProjectReference Include="..\..\modules\Providers\src\Providers.Domain\Providers.Domain.csproj" /></ItemGroup>
+    <ProjectReference Include="..\WashClothes.Domain.Shared\WashClothes.Domain.Shared.csproj" /></ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Emailing" Version="5.3.3" />

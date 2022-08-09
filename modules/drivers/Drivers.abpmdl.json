@@ -1,0 +1,79 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "Drivers.Domain.Shared": {
+      "path": "src/Drivers.Domain.Shared/Drivers.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "Drivers.Domain": {
+      "path": "src/Drivers.Domain/Drivers.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "Drivers.Application.Contracts": {
+      "path": "src/Drivers.Application.Contracts/Drivers.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "Drivers.Application": {
+      "path": "src/Drivers.Application/Drivers.Application.abppkg.json",
+      "folder": "src"
+    },
+    "Drivers.EntityFrameworkCore": {
+      "path": "src/Drivers.EntityFrameworkCore/Drivers.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "Drivers.MongoDB": {
+      "path": "src/Drivers.MongoDB/Drivers.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "Drivers.HttpApi": {
+      "path": "src/Drivers.HttpApi/Drivers.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "Drivers.HttpApi.Client": {
+      "path": "src/Drivers.HttpApi.Client/Drivers.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "Drivers.TestBase": {
+      "path": "test/Drivers.TestBase/Drivers.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "Drivers.EntityFrameworkCore.Tests": {
+      "path": "test/Drivers.EntityFrameworkCore.Tests/Drivers.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Drivers.MongoDB.Tests": {
+      "path": "test/Drivers.MongoDB.Tests/Drivers.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Drivers.Domain.Tests": {
+      "path": "test/Drivers.Domain.Tests/Drivers.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Drivers.Application.Tests": {
+      "path": "test/Drivers.Application.Tests/Drivers.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "Drivers.HttpApi.Host": {
+      "path": "host/Drivers.HttpApi.Host/Drivers.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "Drivers.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/Drivers.HttpApi.Client.ConsoleTestApp/Drivers.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "Drivers.IdentityServer": {
+      "path": "host/Drivers.IdentityServer/Drivers.IdentityServer.abppkg.json",
+      "folder": "host"
+    },
+    "Drivers.Host.Shared": {
+      "path": "host/Drivers.Host.Shared/Drivers.Host.Shared.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

@@ -7,8 +7,7 @@ using Volo.Abp.PermissionManagement;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.VirtualFileSystem;
-using Drivers;
-using Providers;
+
 
 namespace WashClothes;
 
@@ -21,8 +20,6 @@ namespace WashClothes;
     typeof(AbpFeatureManagementHttpApiClientModule),
     typeof(AbpSettingManagementHttpApiClientModule)
 )]
-[DependsOn(typeof(DriversHttpApiClientModule))]
-    [DependsOn(typeof(ProvidersHttpApiClientModule))]
     public class WashClothesHttpApiClientModule : AbpModule
 {
     public const string RemoteServiceName = "Default";

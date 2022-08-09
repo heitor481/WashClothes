@@ -6,8 +6,7 @@ using Volo.Abp.ObjectExtending;
 using Volo.Abp.PermissionManagement;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
-using Drivers;
-using Providers;
+
 
 namespace WashClothes;
 
@@ -21,8 +20,6 @@ namespace WashClothes;
     typeof(AbpTenantManagementApplicationContractsModule),
     typeof(AbpObjectExtendingModule)
 )]
-[DependsOn(typeof(DriversApplicationContractsModule))]
-    [DependsOn(typeof(ProvidersApplicationContractsModule))]
     public class WashClothesApplicationContractsModule : AbpModule
 {
     public override void PreConfigureServices(ServiceConfigurationContext context)

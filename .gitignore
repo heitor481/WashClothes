@@ -251,15 +251,12 @@ paket-files/
 .idea/
 *.sln.iml
 
-# WashClothes
-src/WashClothes.Web/Logs/*
-src/WashClothes.Web/Logs/*
-src/WashClothes.IdentityServer/Logs/*
-src/WashClothes.HttpApi.Host/Logs/*
-src/WashClothes.HttpApi.HostWithIds/Logs/*
-src/WashClothes.DbMigrator/Logs/*
-src/WashClothes.Blazor.Server/Logs/*
-src/WashClothes.Blazor.Server.Tiered/Logs/*
+# Providers
+host/Providers.IdentityServer/Logs/logs.txt
+host/Providers.HttpApi.Host/Logs/logs.txt
+host/Providers.Web.Host/Logs/logs.txt
+host/Providers.Web.Unified/Logs/logs.txt
+host/Providers.Blazor.Server.Host/Logs/logs.txt
 
 # Use abp install-libs to restore.
 **/wwwroot/libs/*
